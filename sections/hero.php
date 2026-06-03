@@ -14,8 +14,8 @@
         </h1>
         <p class="reveal mt-5 max-w-md text-[15px] font-light leading-relaxed text-white/70 sm:text-base">
           <?= e($site['brand']) ?> is the parent company behind Hotelwaley — India's first
-          vernacular microlearning platform for the 40 million frontline workers who run the
-          country's hotels and restaurants.
+          vernacular hospitality skilling platform, training the 40 million frontline workers
+          who run the country's hotels and restaurants.
         </p>
         <div class="reveal mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a href="<?= e($site['platform']) ?>" target="_blank" rel="noopener" class="btn btn-primary btn-lg w-full sm:w-auto">

@@ -162,6 +162,29 @@
     }
   }
 
+  /* ── mobile menu collapse (animated height via grid-rows trick) ── */
+  .menu-collapse {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    visibility: hidden;
+    transition: grid-template-rows 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.25s ease,
+                visibility 0s linear 0.32s;
+  }
+  .menu-collapse > div {
+    min-height: 0;
+    overflow: hidden;
+  }
+  .menu-collapse.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    visibility: visible;
+    transition: grid-template-rows 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.25s ease,
+                visibility 0s;
+  }
+
   /* ── section heading kit ── */
   .eyebrow {
     @apply inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.2em] text-gold-light;

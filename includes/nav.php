@@ -34,18 +34,20 @@
   </div>
 
   <!-- mobile menu -->
-  <div id="navMenu" class="hidden border-t border-border bg-background lg:hidden">
-    <div class="shell flex flex-col py-3">
-      <?php foreach ($nav_links as $link): ?>
-        <a href="<?= e($link['href']) ?>" data-spy="<?= e(ltrim($link['href'], '#')) ?>"
-           class="nav-link border-b border-border/60 py-3 text-[15px] text-white/75 transition-colors hover:text-white">
-          <?= e($link['label']) ?>
+  <div id="navMenu" class="menu-collapse bg-background lg:hidden">
+    <div>
+      <div class="shell flex flex-col border-t border-border py-3">
+        <?php foreach ($nav_links as $link): ?>
+          <a href="<?= e($link['href']) ?>" data-spy="<?= e(ltrim($link['href'], '#')) ?>"
+             class="nav-link border-b border-border/60 py-3 text-[15px] text-white/75 transition-colors hover:text-white">
+            <?= e($link['label']) ?>
+          </a>
+        <?php endforeach; ?>
+        <a href="<?= e($site['platform']) ?>" target="_blank" rel="noopener"
+           class="btn btn-primary mt-4 w-full">
+          Visit Hotelwaley
         </a>
-      <?php endforeach; ?>
-      <a href="<?= e($site['platform']) ?>" target="_blank" rel="noopener"
-         class="btn btn-primary mt-4 w-full">
-        Visit Hotelwaley
-      </a>
+      </div>
     </div>
   </div>
 </nav>

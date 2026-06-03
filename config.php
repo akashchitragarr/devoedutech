@@ -18,6 +18,24 @@ $site = [
     'cin'         => 'U80301KA2022PTC160866',
     'address'     => 'Amrit Building, 2nd Cross, Hosur, Dharwad, Karnataka 580021',
     'year'        => 2026,
+
+    // Focus keyword the page targets first, then supporting long-tail terms.
+    // Kept tight and on-topic — search engines penalise stuffed lists.
+    'focus_keyword' => 'hospitality skilling',
+    'keywords'    => [
+        'hospitality skilling',
+        'hospitality training India',
+        'vernacular microlearning',
+        'frontline hospitality workers',
+        'hotel staff training',
+        'restaurant staff training',
+        'multilingual hospitality training',
+        'FoSTaC training',
+        'NSDC hospitality skilling',
+        'Bharat hospitality skilling',
+        'Hotelwaley',
+        'Devo Edutech',
+    ],
 ];
 
 $nav_links = [

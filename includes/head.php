@@ -6,6 +6,7 @@
 
   <title><?= e($site['title']) ?></title>
   <meta name="description" content="<?= e($site['description']) ?>">
+  <meta name="keywords" content="<?= e(implode(', ', $site['keywords'])) ?>">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#0E2340">
   <link rel="canonical" href="<?= e($site['url']) ?>">
@@ -90,6 +91,7 @@
                 'url'       => $base . '/',
                 'name'      => $site['name'],
                 'description' => $site['description'],
+                'keywords'  => implode(', ', $site['keywords']),
                 'inLanguage' => 'en-IN',
                 'publisher' => [ '@id' => $base . '/#organization' ],
             ],

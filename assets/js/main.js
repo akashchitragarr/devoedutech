@@ -106,12 +106,12 @@
   if (toggle && menu) {
     var icon = toggle.querySelector('i');
     var setOpen = function (open) {
-      menu.classList.toggle('hidden', !open);
+      menu.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', String(open));
       if (icon) { icon.className = open ? 'bi bi-x-lg' : 'bi bi-list'; }
     };
     toggle.addEventListener('click', function () {
-      setOpen(menu.classList.contains('hidden'));
+      setOpen(!menu.classList.contains('is-open'));
     });
     menu.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () { setOpen(false); });
