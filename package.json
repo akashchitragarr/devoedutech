@@ -1,0 +1,13 @@
+{
+  "name": "devo-edutech",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Devo Edutech Pvt Ltd — marketing site (PHP + Tailwind)",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/app.css --minify",
+    "watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/app.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
