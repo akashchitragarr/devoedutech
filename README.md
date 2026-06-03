@@ -34,7 +34,7 @@ Built as a lightweight PHP site composed from section partials, styled with
 ├── assets/
 │   ├── css/
 │   │   ├── input.css    # Tailwind source
-│   │   └── app.css      # Compiled output (generated — not committed)
+│   │   └── app.css      # Compiled output (committed for deploy)
 │   ├── js/
 │   └── images/
 ├── tailwind.config.js
@@ -64,8 +64,9 @@ npm run build      # one-off minified build
 npm run watch      # rebuild on change during development
 ```
 
-The compiled stylesheet is written to `assets/css/app.css`. It is generated and
-not tracked in git — run the build after cloning.
+The compiled stylesheet is written to `assets/css/app.css`. It is committed to
+the repo so the site renders in production without a build step — re-run the
+build and commit the result whenever you change markup or `input.css`.
 
 ### Run locally
 
