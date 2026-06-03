@@ -13,7 +13,7 @@
           <figure class="relative m-0">
             <div class="pointer-events-none absolute -inset-3 -z-10 rounded-3xl bg-gradient-to-tr from-gold/15 to-transparent blur-2xl"></div>
             <div class="relative aspect-[4/5] overflow-hidden rounded-xl border border-border bg-secondary ring-1 ring-white/5">
-              <img src="assets/images/team-ajay.jpg" alt="<?= e($founder['name']) ?>"
+              <img src="assets/images/ajay-image.webp" alt="<?= e($founder['name']) ?>"
                    width="992" height="558" loading="lazy"
                    class="absolute inset-0 h-full w-full object-cover object-center">
               <span class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background via-background/40 to-transparent"></span>
