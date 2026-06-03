@@ -35,31 +35,29 @@
       </div>
 
       <!-- right: numbered feature rows -->
-      <div class="lg:col-span-7">
-        <ul class="-mt-2">
+      <div class="reveal lg:col-span-7">
+        <ul class="divide-y divide-border">
           <?php foreach ($what_we_do as $i => $card): ?>
-            <li>
-              <article class="reveal group relative flex items-start gap-5 border-t border-border py-7 transition-all first:border-t-0 sm:gap-7">
-                <!-- index -->
-                <span class="hidden shrink-0 pt-1.5 font-display text-sm font-semibold tracking-[0.15em] text-gold-light/60 transition-colors group-hover:text-gold-light sm:block" aria-hidden="true">
-                  <?= sprintf('%02d', $i + 1) ?>
-                </span>
+            <li class="group flex items-start gap-4 py-7 first:pt-0 last:pb-0 sm:gap-6">
+              <!-- index -->
+              <span class="hidden shrink-0 pt-1 font-display text-base font-bold tabular-nums text-gold-light/40 transition-colors group-hover:text-gold-light sm:block" aria-hidden="true">
+                <?= sprintf('%02d', $i + 1) ?>
+              </span>
 
-                <!-- icon -->
-                <span class="icon-tile shrink-0 border border-gold/20 bg-gold/10 text-gold-light transition-colors duration-300 group-hover:border-gold group-hover:bg-gold group-hover:text-background">
-                  <i class="bi <?= e($card['icon']) ?>" aria-hidden="true"></i>
-                </span>
+              <!-- icon -->
+              <span class="icon-tile shrink-0 border border-gold/20 bg-gold/10 text-gold-light transition-colors duration-300 group-hover:border-gold group-hover:bg-gold group-hover:text-background">
+                <i class="bi <?= e($card['icon']) ?>" aria-hidden="true"></i>
+              </span>
 
-                <!-- body -->
-                <div class="min-w-0">
-                  <h3 class="font-display text-lg font-bold leading-snug text-foreground transition-colors group-hover:text-gold-light md:text-xl">
-                    <?= e($card['title']) ?>
-                  </h3>
-                  <p class="mt-2 text-sm font-light leading-relaxed text-muted-foreground">
-                    <?= e($card['text']) ?>
-                  </p>
-                </div>
-              </article>
+              <!-- body -->
+              <div class="min-w-0">
+                <h3 class="font-display text-lg font-bold leading-snug text-foreground transition-colors group-hover:text-gold-light md:text-xl">
+                  <?= e($card['title']) ?>
+                </h3>
+                <p class="mt-1.5 text-sm font-light leading-relaxed text-muted-foreground">
+                  <?= e($card['text']) ?>
+                </p>
+              </div>
             </li>
           <?php endforeach; ?>
         </ul>

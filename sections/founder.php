@@ -38,10 +38,9 @@
 
       <!-- narrative led by pull-quote -->
       <div class="lg:col-span-7">
-        <figure class="reveal relative m-0">
-          <i class="bi bi-quote pointer-events-none absolute -left-3 -top-7 text-7xl leading-none text-gold/20" aria-hidden="true"></i>
-          <blockquote class="relative max-w-xl font-serif text-2xl font-medium italic leading-snug text-white md:text-3xl">
-            <?= e($founder['quote']) ?>
+        <figure class="reveal m-0 border-l-2 border-gold pl-6">
+          <blockquote class="max-w-xl font-serif text-2xl font-medium italic leading-snug text-white md:text-3xl">
+            &ldquo;<?= e($founder['quote']) ?>&rdquo;
           </blockquote>
         </figure>
 

@@ -45,8 +45,9 @@
   <!-- Bootstrap Icons (icon font only) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
-  <!-- Compiled Tailwind -->
-  <link href="assets/css/app.css" rel="stylesheet">
+  <!-- Compiled Tailwind (cache-busted by file mtime so deploys serve fresh CSS) -->
+  <?php $css_path = __DIR__ . '/../assets/css/app.css'; $css_v = is_file($css_path) ? filemtime($css_path) : $site['year']; ?>
+  <link href="assets/css/app.css?v=<?= e((string) $css_v) ?>" rel="stylesheet">
 
   <!-- Structured data (schema.org) -->
   <?php

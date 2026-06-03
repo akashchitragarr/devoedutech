@@ -77,6 +77,7 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<?php $js_path = __DIR__ . '/../assets/js/main.js'; $js_v = is_file($js_path) ? filemtime($js_path) : $site['year']; ?>
+<script src="assets/js/main.js?v=<?= e((string) $js_v) ?>"></script>
 </body>
 </html>
