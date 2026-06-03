@@ -9,11 +9,25 @@
   <link rel="canonical" href="<?= e($site['url']) ?>">
 
   <!-- Open Graph / social -->
+  <?php $og_image = rtrim($site['url'], '/') . '/assets/images/opengraph.png'; ?>
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="<?= e($site['name']) ?>">
   <meta property="og:title" content="<?= e($site['name']) ?>">
   <meta property="og:description" content="<?= e($site['description']) ?>">
   <meta property="og:url" content="<?= e($site['url']) ?>">
+  <meta property="og:image" content="<?= e($og_image) ?>">
+  <meta property="og:image:secure_url" content="<?= e($og_image) ?>">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1186">
+  <meta property="og:image:height" content="656">
+  <meta property="og:image:alt" content="<?= e($site['name']) ?>">
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?= e($site['name']) ?>">
+  <meta name="twitter:description" content="<?= e($site['description']) ?>">
+  <meta name="twitter:image" content="<?= e($og_image) ?>">
+  <meta name="twitter:image:alt" content="<?= e($site['name']) ?>">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
