@@ -9,7 +9,7 @@
     <h2 class="section-title reveal text-white">Housekeeping. In <em class="text-gold-light">your</em> language.</h2>
     <p class="section-lead reveal">
       The same lesson, delivered in English, Hindi and Kannada. This is what
-      Bharat-first hospitality training looks like — built for the worker, in the
+      Bharat-first hospitality training looks like. Built for the worker, in the
       language of the worker.
     </p>
 
@@ -45,7 +45,7 @@
         </span>
         <h3 class="mt-4 font-display text-xl font-bold leading-snug text-foreground md:text-2xl">Introduction to Housekeeping</h3>
         <p class="mt-3 text-sm font-light leading-relaxed text-muted-foreground md:text-base">
-          What housekeeping really means in a working hotel — and why it is the
+          What housekeeping really means in a working hotel, and why it is the
           most important room in the building.
         </p>
         <p class="mt-5 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.16em] text-gold-light">
@@ -56,8 +56,7 @@
 
     <!-- language versions -->
     <div class="mt-14 lg:mt-20">
-      <div class="reveal flex items-center gap-3">
-        <span class="h-px w-8 bg-gold" aria-hidden="true"></span>
+      <div class="reveal">
         <span class="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Watch in your language</span>
       </div>
 
@@ -113,7 +112,7 @@
         <span class="font-semibold text-foreground">Why three languages?</span>
         Because a frontline worker in Belagavi, Bhopal or Bengaluru should not have to
         learn in a language that is not their own. Hotelwaley is being built in seven
-        Indian languages. Housekeeping is the first module — more are on the way.
+        Indian languages. Housekeeping is the first module. More are on the way.
       </p>
     </div>
   </div>

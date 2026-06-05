@@ -11,7 +11,7 @@
         </h2>
         <p class="section-lead reveal">
           Whether you run a property, lead an association, or back category-defining
-          infrastructure — we'd love to hear from you.
+          infrastructure, we'd love to hear from you.
         </p>
 
         <ul class="reveal mt-9 space-y-4">

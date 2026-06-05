@@ -8,7 +8,7 @@ $site = [
     'name'        => 'Devo Edutech Pvt Ltd',
     'brand'       => 'Devo Edutech',
     'tagline'     => 'Pvt Ltd',
-    'title'       => 'Devo Edutech — Bharat Hospitality Skilling Infrastructure',
+    'title'       => 'Devo Edutech | Bharat Hospitality Skilling Infrastructure',
     'description' => 'Devo Edutech powers Hotelwaley, India\'s first vernacular hospitality skilling platform training 40 million frontline workers. Explore our mission for Bharat.',
     'url'         => 'https://www.devoedutech.com',
     'location'    => 'Hubli, Karnataka',
@@ -68,7 +68,7 @@ $what_we_do = [
     [
         'icon'  => 'bi-diagram-3',
         'title' => 'Bharat-First Distribution',
-        'text'  => "Platform partnerships with Petpooja, Shiftz, and India's leading hospitality associations — reaching workers through the tools they already use.",
+        'text'  => "Platform partnerships with Petpooja, Shiftz, and India's leading hospitality associations, reaching workers through the tools they already use.",
     ],
     [
         'icon'  => 'bi-megaphone',
@@ -80,7 +80,7 @@ $what_we_do = [
 $credentials = [
     [
         'icon'  => 'bi-trophy-fill',
-        'title' => 'Startup Karnataka Elevate 2023 — Grant Winner',
+        'title' => 'Startup Karnataka Elevate 2023: Grant Winner',
         'desc'  => 'Selected from hundreds of applicants across Karnataka as a high-potential, category-defining startup. Received Rs. 18 Lakhs in grant funding from the Government of Karnataka.',
     ],
     [
@@ -90,7 +90,7 @@ $credentials = [
     ],
     [
         'icon'  => 'bi-search',
-        'title' => 'Structurally Unserved Market — Validated',
+        'title' => 'Structurally Unserved Market: Validated',
         'desc'  => 'Competitive scan of global hospitality training platforms including Cornell University, AHLEI, and Typsy confirms that Bharat-first, vernacular, mobile, frontline hospitality training is a structurally unoccupied category.',
     ],
     [
@@ -104,7 +104,7 @@ $founder = [
     'name'     => 'Ajay Handa',
     'initials' => 'AH',
     'title'    => 'Founder and Managing Director, Devo Edutech Pvt Ltd',
-    'caption'  => 'Ajay Handa — Hubli, Karnataka',
+    'caption'  => 'Ajay Handa, Hubli, Karnataka',
     'quote'    => 'Sometimes all it takes is vision, leftover tiles, and a lot of guts.',
     'highlights' => [
         ['icon' => 'bi-trophy', 'label' => 'Elevate 2023 Grant Winner'],
@@ -112,7 +112,7 @@ $founder = [
         ['icon' => 'bi-geo-alt', 'label' => 'Hubli, Karnataka'],
     ],
     'story'    => [
-        "In the 1990s, Ajay Handa was building a bar inside his family's hotel in Hubli and ran out of money before he could hire a bartender. He drove 400 kilometres to Bangalore, spent days shadowing bartenders at the city's top venues, came back, trained two local boys in everything he had learned, and opened The Zebra Crossing — North Karnataka's first youth nightlife venue.",
+        "In the 1990s, Ajay Handa was building a bar inside his family's hotel in Hubli and ran out of money before he could hire a bartender. He drove 400 kilometres to Bangalore, spent days shadowing bartenders at the city's top venues, came back, trained two local boys in everything he had learned, and opened The Zebra Crossing, North Karnataka's first youth nightlife venue.",
         'Three decades later, the same instinct drives Devo Edutech. Ajay identified that 40 million frontline hospitality workers across Tier 2 and Tier 3 India had never had access to practical, vernacular, job-ready training. No one was building for Bharat. So he did.',
         "Ajay brings deep roots in Karnataka's hospitality, logistics, and startup ecosystem. He is a Toastmasters Presentation Mastery alumnus, a Startup Karnataka Elevate grant winner, and a practitioner whose understanding of India's real hospitality industry shapes every decision at Hotelwaley.",
     ],

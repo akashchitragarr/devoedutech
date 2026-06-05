@@ -7,7 +7,7 @@
       <div class="col-span-2 md:col-span-5">
         <img src="assets/images/logo.png" alt="<?= e($site['name']) ?>" width="300" height="125" class="h-9 w-auto">
         <p class="mt-5 max-w-sm text-sm font-light leading-relaxed text-white/55">
-          Building India's Bharat hospitality skilling infrastructure — the parent company behind Hotelwaley.
+          Building India's Bharat hospitality skilling infrastructure. The parent company behind Hotelwaley.
         </p>
         <div class="mt-6 flex flex-wrap gap-2">
           <span class="badge gap-1.5 text-white/70">

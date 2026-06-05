@@ -13,7 +13,7 @@
           Building India's <em class="not-italic text-gold-light">Bharat Hospitality</em> Skilling Infrastructure
         </h1>
         <p class="reveal mt-5 max-w-md text-[15px] font-light leading-relaxed text-white/70 sm:text-base">
-          <?= e($site['brand']) ?> is the parent company behind Hotelwaley — India's first
+          <?= e($site['brand']) ?> is the parent company behind Hotelwaley, India's first
           vernacular hospitality skilling platform, training the 40 million frontline workers
           who run the country's hotels and restaurants.
         </p>

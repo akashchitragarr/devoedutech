@@ -187,11 +187,7 @@
 
   /* ── section heading kit ── */
   .eyebrow {
-    @apply inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.2em] text-gold-light;
-  }
-  .eyebrow::before {
-    content: '';
-    @apply h-px w-8 bg-gold;
+    @apply inline-flex items-center text-xs font-medium uppercase tracking-[0.2em] text-gold-light;
   }
   .section-title {
     @apply mt-5 font-display text-3xl font-bold leading-tight md:text-4xl;
