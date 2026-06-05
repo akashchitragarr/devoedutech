@@ -6,7 +6,7 @@
    The raw HSL component vars (--gold, --background…) are defined in the
    @layer base block below and flipped by `.section-light`.
    =================================================================== */
-@theme {
+@theme inline {
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
