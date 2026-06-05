@@ -12,7 +12,7 @@
   <link rel="canonical" href="<?= e($site['url']) ?>">
 
   <!-- Open Graph / social -->
-  <?php $og_image = rtrim($site['url'], '/') . '/assets/images/opengraph.png'; ?>
+  <?php $og_image = rtrim($site['url'], '/') . '/assets/images/opengraph-new.png'; ?>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="<?= e($site['name']) ?>">
   <meta property="og:title" content="<?= e($site['name']) ?>">
@@ -22,8 +22,8 @@
   <meta property="og:image" content="<?= e($og_image) ?>">
   <meta property="og:image:secure_url" content="<?= e($og_image) ?>">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1186">
-  <meta property="og:image:height" content="656">
+  <meta property="og:image:width" content="1173">
+  <meta property="og:image:height" content="655">
   <meta property="og:image:alt" content="<?= e($site['name']) ?>">
 
   <!-- Twitter -->
