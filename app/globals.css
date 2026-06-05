@@ -1,6 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* ===================================================================
+   Theme (CSS-first, Tailwind v4). Maps brand tokens to utilities so
+   `bg-background`, `text-gold-light`, `font-display`, etc. all work.
+   The raw HSL component vars (--gold, --background…) are defined in the
+   @layer base block below and flipped by `.section-light`.
+   =================================================================== */
+@theme {
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  /* raw brand tokens for accents/borders */
+  --color-gold: hsl(var(--gold));
+  --color-gold-light: hsl(var(--gold-light));
+  --color-gold-deep: hsl(var(--gold-deep));
+
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
 
 /* ===================================================================
    Design tokens — shadcn model, navy/gold brand.
@@ -91,7 +127,7 @@
 @layer components {
   /* page width shell */
   .shell {
-    @apply mx-auto w-full max-w-shell px-6 lg:px-8;
+    @apply mx-auto w-full max-w-[1120px] px-6 lg:px-8;
   }
 
   .section {
@@ -151,7 +187,7 @@
   .nav-link.active {
     @apply text-white;
   }
-  @screen lg {
+  @media (min-width: 64rem) {
     .nav-link::after {
       content: '';
       @apply absolute inset-x-3 bottom-1 h-px origin-left scale-x-0 bg-gold transition-transform duration-300;
