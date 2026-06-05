@@ -1,6 +1,12 @@
 # Dependencies
 /node_modules/
 
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
 # macOS
 .DS_Store
 
