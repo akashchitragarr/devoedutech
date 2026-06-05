@@ -43,11 +43,12 @@
             </span>
           </div>
           <div class="aspect-video bg-black">
-            <button type="button" data-yt-id="3OmTG72bgLM"
+            <button type="button"
+                    data-video-src="https://ik.imagekit.io/devoedutech/Devotech-videos/Ajay-Intro.mp4"
                     aria-label="Play video: Devo Edutech — Hotelwaley"
                     class="group/play relative block h-full w-full cursor-pointer">
-              <img src="assets/images/promo-video-thumbnail.jpg" alt=""
-                   width="800" height="517" loading="lazy"
+              <img src="https://ik.imagekit.io/devoedutech/Devotech-videos/Ajay-Intro.mp4/ik-thumbnail.jpg?tr=so-2"
+                   alt="" width="800" height="450" loading="lazy"
                    class="absolute inset-0 h-full w-full object-cover">
               <span class="absolute inset-0 bg-black/25 transition-colors group-hover/play:bg-black/15"></span>
               <span class="absolute inset-0 grid place-items-center">

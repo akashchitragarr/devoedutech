@@ -41,6 +41,7 @@ $site = [
 $nav_links = [
     ['href' => '#about',       'label' => 'About'],
     ['href' => '#recognition', 'label' => 'Recognition'],
+    ['href' => '#videos',      'label' => 'Watch'],
     ['href' => '#founder',     'label' => 'Founder'],
     ['href' => '#contact',     'label' => 'Contact'],
 ];

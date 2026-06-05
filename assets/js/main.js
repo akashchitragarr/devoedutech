@@ -83,6 +83,21 @@
     });
   });
 
+  // ── Click-to-load self-hosted video facade (poster → play on click) ──
+  document.querySelectorAll('[data-video-src]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var video = document.createElement('video');
+      video.className = 'h-full w-full object-cover';
+      video.src = btn.getAttribute('data-video-src');
+      video.controls = true;
+      video.autoplay = true;
+      video.playsInline = true;
+      video.setAttribute('controlsList', 'nodownload');
+      btn.replaceWith(video);
+      video.play().catch(function () {});
+    });
+  });
+
   // ── Nav: translucent → solid on scroll ──
   var nav = document.getElementById('siteNav');
   if (nav) {
