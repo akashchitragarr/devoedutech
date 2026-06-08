@@ -118,6 +118,6 @@ dependency** vanilla JS (scroll-reveal, animated stat counters, smooth nav) — 
 
 <sub>© Devo Edutech Pvt Ltd · Proprietary · CIN: U80301KA2022PTC160866 · Hubli, Karnataka 🇮🇳</sub>
 
-<sub>Crafted with PHP · Tailwind CSS · a lot of guts</sub>
+<sub>Crafted with PHP · Tailwind CSS · a lot of guts.</sub>
 
 </div>
