@@ -4,6 +4,7 @@ import About from '@/components/About';
 import Recognition from '@/components/Recognition';
 import Videos from '@/components/Videos';
 import Founder from '@/components/Founder';
+import News from '@/components/News';
 import Platform from '@/components/Platform';
 import Contact from '@/components/Contact';
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Videos />
       <Founder />
       <Platform />
+      <News />
       <Contact />
     </>
   );

@@ -41,6 +41,7 @@ export const navLinks = [
   { href: '#recognition', label: 'Recognition' },
   { href: '#videos', label: 'Watch' },
   { href: '#founder', label: 'Founder' },
+  { href: '#news', label: 'News' },
   { href: '#contact', label: 'Contact' },
 ] as const;
 
@@ -115,6 +116,29 @@ export const founder = {
     "Ajay brings deep roots in Karnataka's hospitality, logistics, and startup ecosystem. He is a Toastmasters Presentation Mastery alumnus, a Startup Karnataka Elevate grant winner, and a practitioner whose understanding of India's real hospitality industry shapes every decision at Hotelwaley.",
   ],
 } as const;
+
+/** Press coverage and news about the founder. Newest first — the first item is featured. */
+export type NewsItem = {
+  title: string;
+  source: string;
+  date: string;
+  image: string;
+  excerpt: string;
+  url: string;
+};
+
+export const news: NewsItem[] = [
+  {
+    title:
+      "The Man Who Taught Himself Bartending In Bangalore Is Now On A Mission To Train India's 40 Million Hospitality Workers",
+    source: 'The Blunt Times',
+    date: 'June 6, 2026',
+    image: '/assets/images/news-blunttimes.jpg',
+    excerpt:
+      "Ajay Handa's entrepreneurial journey began when budget constraints forced him to teach himself bartending by observing techniques at a Bangalore pub. Now he's building Hotelwaley, India's first vernacular microlearning platform designed to train frontline hospitality workers across the country's 40 million-person workforce in their preferred languages.",
+    url: 'https://theblunttimes.in/the-man-who-taught-himself-bartending-in-bangalore-is-now-on-a-mission-to-train-indias-40-million-hospitality-workers/65349/',
+  },
+];
 
 export const contacts = [
   {
