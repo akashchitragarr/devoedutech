@@ -3,8 +3,8 @@
 import { useState } from 'react';
 
 type VideoFacadeProps = {
-  src: string;
-  poster: string;
+  /** YouTube video id (the part after youtu.be/ or watch?v=). */
+  youtubeId: string;
   label: string;
   /** Smaller play button for the language cards. */
   size?: 'lg' | 'sm';
@@ -13,22 +13,26 @@ type VideoFacadeProps = {
 };
 
 /**
- * Click-to-load self-hosted video facade: shows a poster + play button, and
- * only mounts the <video> (autoplay, controls) once the user clicks.
- * Ported from the [data-video-src] handler in the original main.js.
+ * Click-to-load YouTube facade: shows YouTube's own thumbnail + a play button,
+ * and only mounts the privacy-friendly embed iframe (autoplay) once the user
+ * clicks. Keeps the page fast — no YouTube scripts load until playback starts.
  */
-export default function VideoFacade({ src, poster, label, size = 'lg', chip }: VideoFacadeProps) {
+export default function VideoFacade({ youtubeId, label, size = 'lg', chip }: VideoFacadeProps) {
   const [playing, setPlaying] = useState(false);
+  // YouTube's own thumbnail. hqdefault always exists, so default to it (avoids a
+  // wasted 404 when maxresdefault isn't generated). Once a video has the high-res
+  // still, upgrade to it; if that 404s, drop back to hqdefault.
+  const hqPoster = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+  const [poster, setPoster] = useState(hqPoster);
 
   if (playing) {
     return (
-      <video
-        className="h-full w-full object-cover"
-        src={src}
-        controls
-        autoPlay
-        playsInline
-        controlsList="nodownload"
+      <iframe
+        className="h-full w-full"
+        src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
+        title={label}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
       />
     );
   }
@@ -48,6 +52,7 @@ export default function VideoFacade({ src, poster, label, size = 'lg', chip }: V
         src={poster}
         alt=""
         loading="lazy"
+        onError={() => setPoster(hqPoster)}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover/play:scale-105"
       />
       <span

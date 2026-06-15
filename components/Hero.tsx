@@ -58,7 +58,7 @@ export default function Hero() {
                 </span>
               </div>
               <div className="aspect-video bg-black">
-                <VideoFacade src={heroVideo.src} poster={heroVideo.poster} label="Devo Edutech — Hotelwaley" />
+                <VideoFacade youtubeId={heroVideo.youtubeId} label="Devo Edutech — Hotelwaley" />
               </div>
             </div>
           </figure>

@@ -1,4 +1,4 @@
-import { featuredVideo, languageVideos, videoBase } from '@/lib/content';
+import { featuredVideo, languageVideos } from '@/lib/content';
 import VideoFacade from './VideoFacade';
 
 export default function Videos() {
@@ -28,8 +28,7 @@ export default function Videos() {
             <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl ring-1 ring-white/5">
               <div className="aspect-video bg-black">
                 <VideoFacade
-                  src={featuredVideo.src}
-                  poster={featuredVideo.poster}
+                  youtubeId={featuredVideo.youtubeId}
                   label="Introduction to Housekeeping"
                 />
               </div>
@@ -64,13 +63,12 @@ export default function Videos() {
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {languageVideos.map((video) => (
               <article
-                key={video.roman}
+                key={video.youtubeId}
                 className="card reveal group flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-gold/60 hover:shadow-xl"
               >
                 <div className="relative aspect-video bg-black">
                   <VideoFacade
-                    src={`${videoBase}/${video.src}`}
-                    poster={`${videoBase}/${video.src}/ik-thumbnail.jpg?tr=so-2`}
+                    youtubeId={video.youtubeId}
                     label={`Introduction to Housekeeping (${video.roman})`}
                     size="sm"
                     chip={video.native}

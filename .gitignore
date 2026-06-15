@@ -26,3 +26,6 @@ config.local.php
 
 # OS / misc
 Thumbs.db
+
+# local video assets staged for Cloudflare R2 upload
+r2-upload/

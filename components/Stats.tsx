@@ -3,7 +3,10 @@
 import { useEffect, useRef } from 'react';
 import { stats } from '@/lib/content';
 
-/** Animate the numeric core of a value ("40M+", "₹18L", "4.2M", "2026"). */
+/**
+ * Gas-pump style counter: the numeric core of a value ("40M+", "₹18L", "4.2M",
+ * "2026") rolls up fast then decelerates into its final value.
+ */
 function countUp(el: HTMLElement) {
   const raw = el.getAttribute('data-count') || el.textContent || '';
   const prefix = (raw.match(/^[^\d.]*/) || [''])[0];

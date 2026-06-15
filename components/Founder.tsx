@@ -15,8 +15,8 @@ export default function Founder() {
           <div className="reveal lg:col-span-5">
             <div className="lg:sticky lg:top-28">
               <figure className="relative m-0">
-                <div className="pointer-events-none absolute -inset-3 -z-10 rounded-3xl bg-gradient-to-tr from-gold/15 to-transparent blur-2xl" />
-                <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-border bg-secondary ring-1 ring-white/5">
+                <div className="pointer-events-none absolute -inset-3 -z-10 rounded-3xl bg-linear-to-tr from-gold/15 to-transparent blur-2xl" />
+                <div className="relative aspect-4/5 overflow-hidden rounded-xl border border-border bg-secondary ring-1 ring-white/5">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/assets/images/ajay-new-web.jpeg"

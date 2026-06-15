@@ -167,36 +167,32 @@ export const contacts = [
   },
 ] as const;
 
-/** Videos shown in the "Watch" section. */
-export const videoBase = 'https://ik.imagekit.io/devoedutech/Devotech-videos';
-
+/** Videos shown in the "Watch" section. Hosted on YouTube (free CDN). */
 export const featuredVideo = {
-  src: `${videoBase}/intro-main.mp4`,
-  poster: `${videoBase}/intro-main.mp4/ik-thumbnail.jpg?tr=so-2`,
+  youtubeId: 'wJcPqiJgPws',
 } as const;
 
 export const heroVideo = {
-  src: `${videoBase}/Ajay-Intro.mp4`,
-  poster: `${videoBase}/Ajay-Intro.mp4/ik-thumbnail.jpg?tr=so-2`,
+  youtubeId: '--6HVZXkzpk',
 } as const;
 
 export const languageVideos = [
   {
     native: 'English',
     roman: 'EN',
-    src: 'Intro-English.mp4',
+    youtubeId: 'SEfWdWlK31A',
     desc: 'Built for the frontline worker, in clear and simple English.',
   },
   {
     native: 'हिन्दी',
     roman: 'Hindi',
-    src: 'intro-Hindi.mp4',
+    youtubeId: 'sMLjABRf2Og',
     desc: 'Same lesson, Hindi voiceover. For workers across North and Central India.',
   },
   {
     native: 'ಕನ್ನಡ',
     roman: 'Kannada',
-    src: 'intro-kannada.mp4',
+    youtubeId: '1FKtrzBsegE',
     desc: 'Same lesson, Kannada voiceover. For the hotels and resorts of Karnataka.',
   },
 ] as const;
