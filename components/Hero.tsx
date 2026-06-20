@@ -6,11 +6,11 @@ export default function Hero() {
     <header className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
       {/* ambient glows */}
       <div
-        className="hero-glow -right-40 -top-40 h-[480px] w-[480px]"
+        className="hero-glow -right-40 -top-40 h-120 w-120"
         style={{ background: 'radial-gradient(circle, hsl(var(--gold) / 0.12) 0%, transparent 70%)' }}
       />
       <div
-        className="hero-glow -bottom-40 -left-32 h-[400px] w-[400px]"
+        className="hero-glow -bottom-40 -left-32 h-100 w-100"
         style={{ background: 'radial-gradient(circle, hsl(var(--secondary) / 0.85) 0%, transparent 70%)' }}
       />
 
@@ -22,7 +22,7 @@ export default function Hero() {
               Infrastructure
             </h1>
             <p className="reveal mt-5 max-w-md text-[15px] font-light leading-relaxed text-white/70 sm:text-base">
-              {site.brand} is the parent company behind Hotelwaley, India&apos;s first vernacular hospitality skilling
+              {site.brand}{' '}is the parent company behind Hotelwaley, India&apos;s first vernacular hospitality skilling
               platform, training the 40 million frontline workers who run the country&apos;s hotels and restaurants.
             </p>
             <div className="reveal mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -42,7 +42,7 @@ export default function Hero() {
 
           <figure className="reveal relative m-0">
             {/* soft glow for depth */}
-            <div className="pointer-events-none absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-tr from-gold/20 via-gold/5 to-transparent blur-2xl" />
+            <div className="pointer-events-none absolute -inset-4 -z-10 rounded-3xl bg-linear-to-tr from-gold/20 via-gold/5 to-transparent blur-2xl" />
 
             <div className="group overflow-hidden rounded-xl border border-border bg-card shadow-2xl ring-1 ring-white/5 transition-colors duration-300 hover:border-gold/40">
               {/* player chrome */}
